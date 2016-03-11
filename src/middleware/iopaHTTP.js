@@ -1,6 +1,5 @@
-/* global "iopa.RemoveHeader" */
 /*
- * Copyright (c) 2015 Internet of Protocols Alliance (IOPA)
+ * Copyright (c) 2016 Internet of Protocols Alliance (IOPA)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -116,13 +115,13 @@ function ProtoInit(context){
                           });
     
     Object.defineProperty(iopa, IOPA.QueryString, {
-                          get: function () {  return  url.parse(this.req[CONNECT.url]).query; },
+                          get: function () {  return  url.parse(this.reqres[CONNECT.url]).query; },
                           set: function (val) {
-                          var uri = url.parse(this.req[CONNECT.url]).pathname;
+                          var uri = url.parse(this.reqres[CONNECT.url]).pathname;
                           var uriQuery =  val;
                           if (uriQuery != "")
                           uri += "?" + uriQuery;
-                          this.req[CONNECT.url] = uri;
+                          this.reqres[CONNECT.url] = uri;
                           }
                           });
     
