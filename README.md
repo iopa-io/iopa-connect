@@ -1,6 +1,6 @@
 # [![IOPA](http://iopa.io/iopa.png)](http://iopa.io)<br> iopa-connect
 
-[![Build Status](https://api.shippable.com/projects/55f879dd1895ca44741595d1/badge?branchName=master)](https://app.shippable.com/projects/55f879dd1895ca44741595d1)
+[![Build Status](https://api.shippable.com/projects/56e2594e9d043da07bb7cc62/badge?branchName=master)](https://app.shippable.com/projects/56e2594e9d043da07bb7cc62)
 [![NPM](https://img.shields.io/badge/iopa-certified-99cc33.svg?style=flat-square)](http://iopa.io/)
 [![limerun](https://img.shields.io/badge/limerun-certified-3399cc.svg?style=flat-square)](https://nodei.co/npm/limerun/)
 
