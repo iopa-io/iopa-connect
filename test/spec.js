@@ -20,7 +20,6 @@ const iopa = require('iopa'),
   iopaConnect = require('../index'),
   http = require('http');
 
-
 describe('#IOPA()', function () {
 
   var successServer = 0;

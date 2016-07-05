@@ -48,7 +48,7 @@ const MiddlewareExtension = require('./middlewareExtension').default,
     * @public
     */
 IopaApp.prototype.useLegacy = function useLegacy() {
-    this.invokeuse(iopaReqRes);
+    this.use(iopaReqRes);
 }
 
 exports.default = "IOPA-CONNECT SUCCESSFULLY REGISTERED";

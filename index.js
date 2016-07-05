@@ -14,7 +14,8 @@
  * limitations under the License.
  */
  
-
+var iopa=require('iopa');
+require('iopa-rest');
 var register = require('./src/appBuilder/appBuilderExtension').default;
 
 exports.default = register;
