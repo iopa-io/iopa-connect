@@ -53,4 +53,3 @@ IopaApp.prototype.useLegacy = function useLegacy() {
 
 
 exports.default = "IOPA-CONNECT SUCCESSFULLY REGISTERED";
-console.log(exports.default);
