@@ -19,5 +19,6 @@ require('iopa-rest');
 var register = require('./src/appBuilder/appBuilderExtension').default;
 
 exports.default = register;
+exports.http = require('./src/middleware/server').default;
 exports.toHttpListener = require('./src/middleware/iopaHTTP').default;
 exports.connectMiddleware = require('./src/middleware/iopaReqRes').default;
