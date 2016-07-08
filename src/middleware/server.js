@@ -59,7 +59,7 @@ HttpServer.prototype.listen_ = function HttpServer_listen(server, options) {
 }
 
 
-HttpServer.prototype.close = function HttpServer_close() {
+HttpServer.prototype.close_ = function HttpServer_close() {
     return new Promise(function (resolve) {
         setTimeout(function () {
             server._http.close()

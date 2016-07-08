@@ -64,27 +64,31 @@ node demo.js
     
 ### Hello World Example
 ``` js
-const iopa = require('iopa')
-    , http = require('http');
+const iopa = require('iopa'),
+      http = require('iopa-connect').http;
 var app = new iopa.App();
+app.use(http);
 app.use(function(context, next){
        context.response["iopa.WriteHead"](200, {'Content-Type': 'text/html'});
     context.response["iopa.Body"].end("<html><head></head><body>Hello World from HTTP Server</body>");
      return next();
     });
-http.createServer(app.build()).listen(); 
+app.createServer("http:").listen();
 ```
    
 ### Automatic Connect Bridge to Legacy Connect/Express Middleware    
 ``` js
 var iopa = require('iopa')
   , http = require('http');
+  
+require('iopa-connect');
+
 var app = new iopa.App();  
 app.use(function(req, res) {
     response.writeHead(200, {"Content-Type": "text/html"});
     response.end("<html><head></head><body>Hello World</body>");
 });
-http.createServer(app.build()).listen(); 
+http.createServer(app.buildHttp()).listen(); 
 ```    
 
 ### IOPA - HTTP Bridge
